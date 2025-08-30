@@ -1,18 +1,9 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Navbar from './Components/Navbar';
-import AboutUs from './Components/AboutUs';
 import TextForm from './Components/TextForm';
 import { useState } from 'react';
 import Alert from './Components/Alert';
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-//   Link,
-//   BrowserRouter,
-//   Routes
-// } from "react-router-dom";
 
 function App() {
   const[mode,setMode]=useState("light")
@@ -49,18 +40,12 @@ function App() {
   };
 
   return (
-    <>
-      {/* <Router> */}
+    <>     
       <Navbar title="Texty" mode={mode} toggleMode={toggleMode} text={text}/>
       <Alert alert={alert}/>
       <div className="container my-3">
-        {/* <Routes> */}
-          {/* <Route exact path="/about" element={<AboutUs />} /> */}
-          {/* <Route exact path="/" element={}/> */}
-          <TextForm heading="Enter The Text You Want To Analyze" mode={mode} showAlert={showAlert}/>
-        {/* </Routes> */}
+          <TextForm heading="Enter The Text You Want To Transform" mode={mode} showAlert={showAlert}/>
       </div>
-      {/* </Router> */}
     </>
   );
 }

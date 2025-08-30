@@ -1,4 +1,4 @@
-import React from "react";
+
 import PropTypes from "prop-types";
 
 export default function Navbar(props) {
@@ -29,11 +29,6 @@ export default function Navbar(props) {
                   Home
                 </a>
               </li>
-              {/* <li className="nav-item">
-                <Link className="nav-link" to="/about">
-                  AboutUs
-                </Link>
-              </li> */}
             </ul>
             <div
               className={`form-check form-switch text-${
